@@ -1,0 +1,2 @@
+const searchBox = document.querySelector('.search-box');
+    searchBox.addEventListener('keypress', setQuery);
