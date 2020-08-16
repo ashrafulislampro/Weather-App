@@ -5,7 +5,9 @@
 
 const searchBtn = document.getElementById("clickBtn").addEventListener('click', function(){
     const inputValue = document.getElementById("inputValue").value;
-    return inputValue; 
+     getResults(inputValue);
+     document.getElementById("inputValue").value="";
+
 })
 
 
@@ -26,7 +28,7 @@ const searchBtn = document.getElementById("clickBtn").addEventListener('click', 
          return weather.json();
      }).then(displayResults);
  }
- getResults('Dhaka');
+  
 
 
  function displayResults (weather) {
